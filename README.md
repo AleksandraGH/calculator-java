@@ -1,15 +1,15 @@
 Izveštaj:
-Kalkulator
+Kalkulator-
 Ovaj projekat predstavlja jednostavan kalkulator koji omogućava izračunavanje aritmetičkih operacija nad brojevima.
-Pokretanje
+Pokretanje-
 Pokretanje kalkulatora se vrši pomoću klase Start. Pokrenite program tako što ćete uneti izraze koje želite da izračunate. Za izlaz iz programa unesite "exit".
-Funkcionalnosti
+Funkcionalnosti-
 Kalkulator podržava sledeće aritmetičke operacije: sabiranje (+), oduzimanje (-), množenje (*) i deljenje (/). Može se izračunati izraz koji sadrži ove operacije i brojeve. Izrazi mogu biti celobrojni ili decimalni.
-Ograničenja
+Ograničenja-
 Kalkulator trenutno ima nekoliko ograničenja i propusta koji treba da se uzmu u obzir:
 1.	Metoda ToString treba preimenovati u toString kako bi pratila konvencije za nazive metoda u Javi.
 2.	Metoda Calculate ne obrađuje slučaj u kojem ulazni izraz sadrži zagrade, tako da zagrade nisu prepoznate.
-Testiranje
+Testiranje-
 Kako bismo testirali ispravnost koda, sprovedimo sistemsko testiranje po metodi crne kutije koristeći nekoliko test slučajeva:
 •	Testiranje osnovnih aritmetičkih operacija sa celim brojevima:
 •	Ulaz: 3 + 2, očekivani izlaz: 5
