@@ -1,0 +1,52 @@
+ Test Izveštaj
+
+ Sistemsko testiranje (testiranje crne kutije)
+
+1. Izraz: 2+3
+   Očekivani rezultat: 5
+   Dobijeni rezultat: 5
+   **Rezultat je tačan.**
+
+2. Izraz: 10-4*3
+   Očekivani rezultat: -2
+   Dobijeni rezultat: -2
+   **Rezultat je tačan.**
+
+3. Izraz: 9/0
+   Očekivani rezultat: Greška (deljenje nulom)
+   Dobijeni rezultat: ERROR
+   **Rezultat je tačan. Program ispravno prikazuje grešku.**
+
+4. Izraz: 7.8+1.6-0.9
+   Očekivani rezultat: 8.5
+   Dobijeni rezultat: 8.499999
+   **Rezultat nije tačan. Postoji problem sa tačnošću decimalnih brojeva.**
+
+ Jedinični test za metodu Calculate
+
+1. Testiranje osnovne operacije oduzimanja
+   - Uneti izraz: 5-2
+   - Očekivani rezultat: 3.0
+   - Dobijeni rezultat: 3.0
+   **Rezultat je tačan.**
+
+Napomene:
+- Metodu ToString treba preimenovati u toString kako bi pratila konvencije za Java nazive metoda.
+- Metoda Calculate ne obrađuje slučaj kada ulazni izraz ima zagrade jer ne prepoznaje zagrade.
+- Postoji problem sa tačnošću decimalnih brojeva. Program prikazuje neprecizne rezultate u određenim slučajevima.
+- Navedeni jedinični test pokriva samo osnovnu operaciju oduzimanja.
+
+ Softverske greške, nedostaci i propusti
+
+1. Metodu ToString treba preimenovati u toString kako bi pratila konvencije za Java nazive metoda.
+2. Metoda Calculate ne obrađuje slučaj kada ulazni izraz ima zagrade jer ne prepoznaje zagrade.
+
+ Dodatno sistemsko testiranje po metodi crne kutije
+
+Kako bismo testirali ovaj kod Calculate, uradićemo sledeće:
+- Testiranje osnovnih aritmetičkih operacija sa celim brojevima:
+  - Ulaz: 2+3, Izlaz: 5
+  - Ulaz: 4-2, Izlaz: 2
+- Testiranje sa negativnim celim brojevima:
+  - Ulaz: -3+5, Izlaz: 2
+  - Ulaz: 9-4, Izlaz: 5
