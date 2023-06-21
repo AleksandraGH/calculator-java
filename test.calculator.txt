@@ -1,4 +1,30 @@
- Test Izveštaj
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class CalculatorTest {
+
+@Test
+public void testCalculate() {
+List<Float> numbers = new ArrayList<>(Arrays.asList(7.0f, 3.0f, 5.0f));
+List<String> operations = new ArrayList<>(Arrays.asList("+", "*", "-"));
+
+Calculator.Calculate(numbers, operations);
+
+float actualResult = Calculator.finalResult;
+float expectedResult = 22;
+
+assertEquals(expectedResult, actualResult, 0.0001);
+}
+}
+
+
+
+
+Test Izveštaj
 
  Sistemsko testiranje (testiranje crne kutije)
 
